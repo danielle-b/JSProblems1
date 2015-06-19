@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>JS Problems</title>
+		
+		<style>
+          body{
+          	background-color: DeepSkyBlue;
+          }
+		</style>
+	</head>
+		<body>
+			<form id = "login">
+               User name:<br>
+                 <input type="text" name="username" id="username">
+                  <br>
+                User password:<br>
+                  <input type="password" name="psw" id="psw">
+                   <br><br>
+                <input type="button" value="Submit" onClick="validateForm()">
+            </form>
+
+            <script>
+		        var form = document.getElementById("login")
+             function validateForm() {
+                if(form.username.value != "Danielle Brantley")
+                	alert("Error: Incorrect username!");
+                form.username.focus();
+                return false;
+             }
+
+                if(form.psw.value != "DONNIEsimpson&1"){
+             	    alert("Error: Please make sure you've entered the correct password.");
+                form.psw.focus();
+                
+              }
+
+
+		</script>
+		</body>
+</html>
